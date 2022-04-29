@@ -1,5 +1,7 @@
-1- Create record in /etc/hosts with  <127.0.0.1	calender.local>
-2- Run $docker login ==> add your dockerhub credentials
-3- Run $docker-compose up
-4- Run $docker exec php php artisan migrate
-5- Go to your browser and type http://calender.local.
+$git clone  https://github.com/Mohamedalaaelsafy/work-calender.git
+$cd work-calender
+$docker login ==> add your dockerhub credentials
+$docker-compose up
+$docker exec php php artisan migrate
+Create record in /etc/hosts with  <127.0.0.1	calender.local>
+Go to your browser and type http://calender.local.
