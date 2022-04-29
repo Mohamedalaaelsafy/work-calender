@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  nginx:
+    image: mohamedalaaelsafy/nginx:1.0
+    container_name: nginx
+    depends_on:
+      - php
+      - mysql
+    ports:
+      - '80:80'
+  php:
+    image: mohamedalaaelsafy/php:1.0
+    container_name: php
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mohamedalaaelsafy/mysql:1.0
+    container_name: mysql
+    volumes:
+      - ./mysql:/var/lib/mysql
